@@ -1,5 +1,5 @@
 import AppController from '../controllers/AppController';
-import UsersController from '../controllers/UserController';
+import UsersController from '../controllers/UsersController';
 
 const express = require('express');
 
