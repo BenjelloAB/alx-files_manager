@@ -140,6 +140,8 @@ class FilesController {
     }
 
     const idFile = req.params.id || '';
+    // fix1 :
+    if (!idFile) return res.status(404).send({ error: 'Not found' });
 
     const fileDocument = await DBClient.db
       .collection('files')
