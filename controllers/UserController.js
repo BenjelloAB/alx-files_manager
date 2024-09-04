@@ -19,12 +19,10 @@ class UsersController {
       .collection('users')
       .insertOne({ email: userEmail, password: shaUserPassword });
 
-
     return response
       .status(201)
       .send({ id: result.insertedId, email: userEmail });
   }
-
 }
 
 module.exports = UsersController;
